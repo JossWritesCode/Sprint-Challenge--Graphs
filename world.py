@@ -64,7 +64,7 @@ class World:
             # get the new room's neighbors
             exits = node.get_exits()
             neighbors = []
-            print("I am in room " + str(node.id))
+            # print("I am in room " + str(node.id))
             for exit in exits:
                 neighbors.append(node.get_room_in_direction(exit))
             for neighbor in neighbors:
@@ -88,7 +88,6 @@ class World:
         for neighbor in neighbors:
             self.helper_function(neighbor, visited, path, node)
         return path
-
 
     def print_rooms(self):
         rotated_room_grid = []
@@ -142,4 +141,3 @@ class World:
             str += "#\n"
         print(str)
         print("#####")
-

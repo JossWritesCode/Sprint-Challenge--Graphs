@@ -30,7 +30,6 @@ player = Player(world.starting_room)
 
 
 traversal_path = world.traverse_maze()
-print(traversal_path, "traversal_path")
 
 
 # TRAVERSAL TEST - DO NOT MODIFY
