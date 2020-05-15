@@ -34,12 +34,12 @@ class World:
             if 'n' in room_graph[room_id][1]:
                 self.rooms[room_id].connect_rooms(
                     'n', self.rooms[room_graph[room_id][1]['n']])
-            if 'e' in room_graph[room_id][1]:
-                self.rooms[room_id].connect_rooms(
-                    'e', self.rooms[room_graph[room_id][1]['e']])
             if 's' in room_graph[room_id][1]:
                 self.rooms[room_id].connect_rooms(
                     's', self.rooms[room_graph[room_id][1]['s']])
+            if 'e' in room_graph[room_id][1]:
+                self.rooms[room_id].connect_rooms(
+                    'e', self.rooms[room_graph[room_id][1]['e']])
             if 'w' in room_graph[room_id][1]:
                 self.rooms[room_id].connect_rooms(
                     'w', self.rooms[room_graph[room_id][1]['w']])
